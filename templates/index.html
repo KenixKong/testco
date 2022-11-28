@@ -1,0 +1,182 @@
+
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+{% import "bootstrap/wtf.html" as wtf %}
+
+<html>
+	<head>
+		<title>SY Kong & Co.</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">Who we are</a></li>
+							<li><a href="#two">What we do</a></li>
+							<li><a href="#three">Contact Us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>SY Kong & Co. (NF 2351) <br> 江氏会计事务所</h1>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="static/images/pic01.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>About</h2>
+									<p>SY Kong & Co. (NF 2351) is an accounting firm located at Tapah, Perak.
+									The firm started with Kong Accounting & General Services (江会计事务所) which also located at the same office and serve different type of business for more than 30 years.</p>
+									<p>With diverse experience in business over the years, we able to provide you with our professional advice.
+									Our firm and team are providing services such as business consultancy, accounting support and bookkeeping services, business consultancy, accounting software, tax consultancy service and many more.</p>
+									<ul class="actions">
+
+									</ul>
+								</div>
+							</div>
+						</section>
+
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>What we do</h2>
+							<p>Our firm is providing services such as business consultancy, accounting and bookkeeping services, business consultancy, accounting software, tax consultancy service, company registration, outsource payroll service and other business support services.</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-book"></span>
+									<h3>Accounting support and bookkeeping services</h3>
+									<p>We offer a wide range of accounting support for small to medium-sized enterprises (SME). We assist in keeping detailed records, keep your business transaction recorded in proper manner and updated monthly, quarterly, or yearly.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-money-bill-wave"></span>
+									<h3>Management services / Outsourcing payroll service</h3>
+									<p>Our team provide management services such as renewal of business license, outsource payroll support service. We also assist in prepare payroll, submission of statutory payment and other payment. Statutory payment such as EPF, SOCSO, EIS, PCB, HRDF submission.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-file-invoice"></span>
+									<h3>Tax consultancy service</h3>
+									<p>We assist in prepare of tax computation from individual to company level.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-registered"></span>
+									<h3>Business consultancy</h3>
+									<p>Our team assist in company registration and business consultancy accordance to your business nature.</p>
+								</section>
+
+							</div>
+							<ul class="actions">
+<!--								<li><a href="generic.html" class="button">Learn more</a></li>-->
+							</ul>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Contact Us</h2>
+							<div class="split style1">
+								<section>
+									<form method="post" action="{{url_for('home')}}">
+<!--										{{ wtf.quick_form(form) }}-->
+
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												{{form.name}}
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												{{form.email}}
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												{{form.message}}
+											</div>
+										</div>
+										<ul class="actions">
+											{{form.submit}}
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>No 20(first floor), Jalan Stesyen<br />
+											35000, Tapah, Perak<br />
+											Malaysia</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">sykongms@gmail.com</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>05-4010217 or 012-5266630</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; SY Kong & Co.(NF 2351) 2022.</li></a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="static/assets/js/browser.min.js"></script>
+			<script src="static/assets/js/breakpoints.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+
+	</body>
+</html>
